@@ -1,0 +1,26 @@
+.layer {
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background-color: lightcoral;
+}
+.z-index {
+    position: relative;
+}
+.layer:nth-child(1) {
+  z-index: 1;
+}
+.layer:nth-child(2) {
+    top: 125px;
+    left: 125px;
+    z-index: 1;
+    background-color: cornflowerblue;
+}
+.layer:nth-child(3) {
+    top: 250px;
+    left: 250px;
+    z-index: 0;
+    background-color: lightgreen;
+}
